@@ -68,9 +68,7 @@ void setup() {
   Serial.begin(115200);
 
   
-  // start internal time update ISR
-  tkSecond.attach(1, ISRsecondTick);
-
+ 
 #ifdef OTA
   // ***********  OTA SETUP
 
@@ -112,6 +110,9 @@ void setup() {
   
   loadStation();
   loadWeb();
+   // start internal time update ISR
+  tkSecond.attach(1, ISRsecondTick);
+
 }
 
 // the loop function runs over and over again forever
@@ -141,7 +142,12 @@ void loadStation(){
          //WiFi.end();
          WiFi.mode(WIFI_STA);  
          WiFi.begin(config.ssid.c_str(), config.password.c_str());
-
+         if(WiFi.waitForConnectResult() == WL_CONNECTED){
+          Serial.print("IP:");Serial.println(WiFi.localIP());
+         } 
+         else{
+          Serial.print(config.ssid.c_str());Serial.println(" connection to wifi failed!");
+         }
 }
 
 void loadWeb(){
