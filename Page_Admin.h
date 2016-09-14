@@ -3,7 +3,7 @@
 //  HTML PAGE
 //
 
-const char PAGE_AdminMainPage[] PROGMEM = R"=====(
+const char PAGE_AdminMainPage[]  = R"=====(
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <strong>Administration</strong>
 <hr>

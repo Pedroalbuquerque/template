@@ -2,7 +2,7 @@
 //  HTML PAGE
 //
 
-const char PAGE_AdminGeneralSettings[] PROGMEM =  R"=====(
+const char PAGE_AdminGeneralSettings[]  =  R"=====(
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <a href="/"  class="btn btn--s"><</a>&nbsp;&nbsp;<strong>General Settings</strong>

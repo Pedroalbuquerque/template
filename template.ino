@@ -163,12 +163,14 @@ void loadWeb(){
     
           server.on ( "/favicon.ico",   []() {
             Serial.println("favicon.ico");
-            server.send ( 200, "text/html", "" );
+            //server.send ( 200, "text/html", "€" );
           }  );
+
     
           // Network config
           server.on ( "/config.html", send_network_configuration_html );
-          // Info Page
+          
+          //Info Page
           server.on ( "/info.html", []() {
             Serial.println("info.html");
             server.send ( 200, "text/html", PAGE_Information );
@@ -178,6 +180,7 @@ void loadWeb(){
           //server.on ( "/appl.html", send_application_configuration_html  );
           server.on ( "/general.html", send_general_html  );
           //  server.on ( "/example.html", []() { server.send ( 200, "text/html", PAGE_EXAMPLE );  } );
+       
           server.on ( "/style.css", []() {
             Serial.println("style.css");
             server.send ( 200, "text/plain", PAGE_Style_css );
@@ -186,6 +189,8 @@ void loadWeb(){
             Serial.println("microajax.js");
             server.send ( 200, "text/plain", PAGE_microajax_js );
           } );
+
+          
           server.on ( "/admin/values", send_network_configuration_values_html );
           server.on ( "/admin/connectionstate", send_connection_state_values_html );
           server.on ( "/admin/infovalues", send_information_values_html );
@@ -193,7 +198,7 @@ void loadWeb(){
           //server.on ( "/admin/applvalues", send_application_configuration_values_html );
           server.on ( "/admin/generalvalues", send_general_configuration_values_html);
           server.on ( "/admin/devicename",     send_devicename_value_html);
-    
+          
     
           server.onNotFound ( []() {
             Serial.println("Page Not Found");

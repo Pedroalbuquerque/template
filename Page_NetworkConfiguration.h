@@ -3,7 +3,7 @@
 //
 //  HTML PAGE
 //
-const char PAGE_NetworkConfiguration[] PROGMEM = R"=====(
+const char PAGE_NetworkConfiguration[]  = R"=====(
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <a href="/"  class="btn btn--s"><</a>&nbsp;&nbsp;<strong>Network Configuration</strong>
