@@ -3,7 +3,7 @@
 //
 //  HTML PAGE
 //
-const char PAGE_NetworkConfiguration[]  = R"=====(
+const char PAGE_NetworkConfiguration[] PROGMEM = R"=====(
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <a href="/"  class="btn btn--s"><</a>&nbsp;&nbsp;<strong>Network Configuration</strong>
@@ -97,13 +97,13 @@ void send_network_configuration_html()
 			if (server.argName(i) == "gw_3") if (checkRange(server.arg(i))) 	config.Gateway[3] =  server.arg(i).toInt();
 			if (server.argName(i) == "dhcp") config.dhcp = true;
 		}
-		 server.send ( 200, "text/html", PAGE_WaitAndReload );
+		 server.send_P ( 200, "text/html", PAGE_WaitAndReload );
 		WriteConfig();
 		ConfigureWifi();		
 	}
 	else
 	{
-		server.send ( 200, "text/html", PAGE_NetworkConfiguration ); 
+		server.send_P ( 200, "text/html", PAGE_NetworkConfiguration ); 
 	}
 	Serial.println(__FUNCTION__); 
 }

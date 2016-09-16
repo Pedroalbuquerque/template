@@ -1,5 +1,5 @@
 
-const char PAGE_NTPConfiguration[]  = R"=====(
+const char PAGE_NTPConfiguration[] PROGMEM = R"=====(
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <a href="/"  class="btn btn--s"><</a>&nbsp;&nbsp;<strong>NTP Settings</strong>
@@ -87,7 +87,7 @@ void send_NTP_configuration_html()
    
     firstStart = true;
   }
-  server.send ( 200, "text/html", PAGE_NTPConfiguration ); 
+  server.send_P ( 200, "text/html", PAGE_NTPConfiguration ); 
   Serial.println(__FUNCTION__); 
   
 }

@@ -5,7 +5,7 @@
 //
 //   The HTML PAGE
 //
-const char PAGE_Information[]  = R"=====(
+const char PAGE_Information[] PROGMEM = R"=====(
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <link rel="stylesheet" href="style.css" type="text/css" />

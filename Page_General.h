@@ -2,7 +2,7 @@
 //  HTML PAGE
 //
 
-const char PAGE_AdminGeneralSettings[]  =  R"=====(
+const char PAGE_AdminGeneralSettings[] PROGMEM =  R"=====(
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <a href="/"  class="btn btn--s"><</a>&nbsp;&nbsp;<strong>General Settings</strong>
@@ -61,7 +61,7 @@ void send_general_html()
 		WriteConfig();
 		firstStart = true;
 	}
-	server.send ( 200, "text/html", PAGE_AdminGeneralSettings ); 
+	server.send_P ( 200, "text/html", PAGE_AdminGeneralSettings ); 
 	Serial.println(__FUNCTION__); 
 	
 	
