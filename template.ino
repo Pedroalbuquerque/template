@@ -69,7 +69,7 @@ void setup() {
   if ( (WIFI_connected!= WL_CONNECTED) or !CFG_saved){
     // DEFAULT CONFIG
     Serial.println("Setting AP mode default parameters");
-    config.ssid = "WOLF" + String(ESP.getChipId(),HEX);       // SSID of access point
+    config.ssid = "ESP8266-" + String(ESP.getChipId(),HEX);       // SSID of access point
     config.password = "" ;   // password of access point
     config.dhcp = true;
     config.IP[0] = 192; config.IP[1] = 168; config.IP[2] = 1; config.IP[3] = 100;
