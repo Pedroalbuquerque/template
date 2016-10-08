@@ -14,31 +14,31 @@ Some basic functionalities are provided:
 
 Download all the files from this template to a folder on your environment and rename the folder "Template" to your sketch name. Rename also the Template.ino file acordingly.
 
-For a brand new board you have to load this sketch using a serial port upload via an FTDI ou other UBS to Serial interface.
+For a brand new board you have to load this sketch using a serial port upload via an FTDI or other UBS to Serial interface.
 
-Once loaded, the skecth will try to load configuration from EEPROM (nothing will be saved when loaded for the first time), and if no configuration is found, board will enter in AP mode. 
+Once loaded, the sketch will try to load configuration from EEPROM (nothing will be saved when loaded for the first time), and if no configuration is found, board will enter in AP mode.
 In this mode a new AP will be available for you to connect your PC or Mobile phone, with the name "ESP8266-xxxx" and no password.
 The board will be assigned the IP:192.168.4.1.
-Once you connect your PC or phone to this AP("ESP8266-xxxx"), you can open a browser and try to access the adress 192.168.4.1, that will show you the main configuration page
-Choose "Network Configuratin button" to define SSID and Password so the board can connect to your home Access point(router) and use the "Save" button to save it to the EEPROM.
-Board will reset and connect to your router aquiring a new IP adress on your lan network.
-On your Serial Monitor you can see what is the board new IP adress assigned by your router and you can now connect to the board via this new IP. 
+Once you connect your PC or phone to this AP("ESP8266-xxxx"), you can open a browser and try to access the address 192.168.4.1, that will show you the main configuration page
+Choose "Network Configuration button" to define SSID and Password so the board can connect to your home Access point(router) and use the "Save" button to save it to the EEPROM.
+Board will reset and connect to your router acquiring a new IP address on your LAN network.
+On your Serial Monitor you can see what is the board new IP address assigned by your router and you can now connect to the board via this new IP.
 To do so now you have to reconnect your PC or phone to your home router.
 
-You can test it by using a "ping" command from a comamnd line on your PC or Terminal if on a MAC.
+You can test it by using a "ping" command from a command line on your PC or Terminal if on a MAC.
 
-If you succeed, a new port shoud show up (may take a 1 to 3 minutes to show up) in your Arduino IDE environment to allow to OTA your next sketch to the board.
+If you succeed, a new port should show up (may take a 1 to 3 minutes to show up) in your Arduino IDE environment to allow to OTA your next sketch to the board.
 
 ## How to write your own code
 
-Assuming you are familiar with the Arduino framework, you have the same two basic function setup() and loop(), that already have some basid code to implement this basic fucntionality of the template.
+Assuming you are familiar with the Arduino framework, you have the same two basic function setup() and loop(), that already have some basic code to implement this basic functionality of the template.
 you can find in this to function a place holder like
     //**** Normal Sketch code here...
-      
-      write you own setup code after this comment
-      
-You can naturaly include your libraries in the skecth as necessary for your specific code.
 
-Hope you can find this interesting and usefull.
+      write you own setup code after this comment
+
+You can naturally include your libraries in the sketch as necessary for your specific code.
+
+Hope you can find this interesting and useful.
 
 Pedro Albuquerque
