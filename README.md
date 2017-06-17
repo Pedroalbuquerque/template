@@ -10,7 +10,7 @@ Some basic functionalities are provided:
 * AP (Access Point) boot when connection to your access point does not suceed
 * NTP to allow you to have a variable with current date and time loaded from internet
 
-##How to use it
+## How to use it
 
 Download all the files from this template to a folder on your environment and rename the folder "Template" to your sketch name. Rename also the Template.ino file acordingly.
 
