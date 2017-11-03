@@ -1,4 +1,4 @@
-# template
+# template - discontinued see https://github.com/Pedroalbuquerque/ESPBASE
 Template to build ESP8266 projects using OTA and Web config
 
 This sketch was created to be a framework or base sketch to create new projects for ESP8266.
